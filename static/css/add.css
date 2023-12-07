@@ -1,0 +1,132 @@
+.navbar-brand img{
+    height: 80px;
+}
+.img-responsive.thuhidden.center-block{
+    height: 160px;
+}
+.searchBox{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: 100;
+}
+.searchBox input{
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    transition: all .5s;
+    outline-style: none;
+    border-radius: 5px;
+    box-shadow: none;
+    padding: 0 10px;
+}
+.searchBox input:focus{
+    border-color: #409eff;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+#list{
+    margin-top: 10px;
+}
+/* 右边侧边栏 */
+#mirrors .container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+#mirrors .container .conLeft{
+    width: 60%;
+    position: relative;
+}
+#mirrors .container .conRight{
+    width: 30%;
+    padding-left: 20px;
+    border-left: 1px solid #ccc;
+}
+#mirrors .container .conRight .riItem{
+    margin-bottom: 30px;
+}
+#mirrors .container .conRight .riItem .riTitle{
+    color: #088acb;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+#mirrors .container .conRight .riItem .riDesc{
+    font-size: 16px;
+    color: #000;
+    line-height: 24px;
+}
+#mirrors .container .conRight .riItem .riDesc a{
+    color: #000;
+    text-decoration: underline;
+}
+#mirrors .container .conRight .riItem .riBtn{
+    transition: all .5s;
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 3px 20px;
+    cursor: pointer;
+    background-color: #088acb;
+    display: inline-block;
+}
+#mirrors .container .conRight .riItem .riBtn:hover{
+    opacity: .7;
+}
+@media screen and (max-width: 960px) {
+    .navbar-brand img{
+        height: 50px;
+    }
+    #mirrors .container{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        padding-top: 30px;
+        position: relative;
+    }
+    .searchBox{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 230px;
+        z-index: 100;
+    }
+    .searchBox input{
+        width: 100%;
+    }
+    #mirrors .container .conLeft{
+        width: 100%;
+    }
+    #mirrors .container .conRight{
+        width: 100%;
+        padding: 0;
+        border: none;
+    }
+    /* 头部 */
+    .navbar.navbar-default .container{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .container>.navbar-header{
+        width: 100%;
+        padding-bottom: 10px;
+        padding-left: 2px;
+        margin: 0;
+    }
+    .container>.navbar-collapse.collapse.navbar-right{
+        display: flex;
+        border: none;
+        flex-direction: row-reverse;
+        width: 100%;
+        margin: 0;
+    }
+    .navbar.navbar-default .container .navbar-nav{
+        display: flex;
+    }
+    .img-responsive.thuhidden.center-block{
+        height: 120px;
+    }
+    #footerwrap{
+        margin-top: 5px;
+    }
+}
